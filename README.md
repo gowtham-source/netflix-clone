@@ -16,6 +16,14 @@ This project is a web application that replicates the functionality of popular v
 4. A media player that allows users to stream movies and TV shows.
 5. A backend API that serves movie and TV show data to the frontend.
 
+---
+**NOTE:**
+
+This project is Netflix clone that I have developed using modern MERN (MongoDB, Express.js, React, Node.js) concepts instead of outdated libraries
+Additionally, the recommendation model used in this project is portable and can be run anywhere.
+
+---
+
 ### Technology Stack
 FrameWorks:
 - [x] React
@@ -38,6 +46,8 @@ Packages used:
 
  - The search functionality is powered by the TMDB API, which allows the application to access a large collection of movies and TV shows. Users can click on a title to see more information about it, including its release date, genre, rating, and summary.
 
+![image](https://user-images.githubusercontent.com/75899822/230412069-0dfe778b-40de-42cf-9a3b-04b60aba0cdb.png)
+
 ### **Authentication System**
  - The authentication system allows users to create accounts, log in, and log out of the application. This is achieved using Firebase Auth, which provides a secure and reliable user authentication service.
 
@@ -45,10 +55,17 @@ Packages used:
 
  - Once a user has logged in, they can access their profile page, where they can view their viewing history and manage their watch list. The profile page also includes a logout button that allows users to log out of the application.
 
+![image](https://user-images.githubusercontent.com/75899822/230411308-2817e3d4-3fa3-4556-a08c-3929f993dbde.png)
+
 ### **User Profile Page**
  - The user profile page displays a user's viewing history and watch list. This allows users to keep track of what they have watched and what they want to watch next. The viewing history is stored in the MongoDB database and is updated in real-time as the user watches movies and TV shows.
 
  - The watch list is stored using a linked list data structure, which allows for efficient adding and removing of items. Users can add titles to their watch list by clicking on the "Add to Watch List" button on the title's page. They can also remove titles from
+![image](https://user-images.githubusercontent.com/75899822/230413794-65d8f53c-18b6-44d6-adde-ec3e081dfa01.png)
+In the above image users add their watch list, it is stored in the user(mongodb database)
+</br>
+
+![image](https://user-images.githubusercontent.com/75899822/230415267-e8b12bbe-546e-4faf-87ab-e65a03057554.png)
 
 ### **Recommendation System**
  - The recommendation system is a key feature of the Netflix clone, and it's designed to provide users with personalized recommendations based on their viewing history and preferences. The system is built using machine learning algorithms, specifically collaborative and content-based filtering.
@@ -137,4 +154,19 @@ sample output(request from the server)
 and this our Recommended movie list responded from our server.
 
 And we can also run this recommendation model 
+</br>
+To run this
+```
+streamlit run app.py
+```
+
+![image](https://user-images.githubusercontent.com/75899822/230402281-6f3c5112-ac25-4047-937c-470ac659abf4.png)
+
+
+### Feature Enhancement
+
+- Further this can be developed and handled with the large scale of user data, and a admin controls which includes a dashboard of analytics that shows the insights of the user interactions and enables us to develop some more features.
+- The recommendation system can also be enhanced with the optimal feature such as recommendations based on seasonal trends, location based etc...
+- And needs to setup the Subscription page which includes the transaction services!
+- "Last but not least, A Chatbot system developed based on the Generative model with cosine similarity and sentiment analyzer that suggest the movies for the user based on their current mood - This will help us to interact with the user based on user emotions etc.."
 

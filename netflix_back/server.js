@@ -25,6 +25,15 @@ mongoose
 
 app.use("/api/user", userRoutes);
 
+app.use(cors());
+
+// Or, allow requests from specific origins
+app.use(
+  cors({
+    origin: "https://sakthiflix.netlify.app/",
+  })
+);
+
 app.listen(5000, () => {
   console.log("server started on port 5000");
 });

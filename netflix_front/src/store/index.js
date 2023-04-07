@@ -82,7 +82,7 @@ export const getUsersLikedMovies = createAsyncThunk(
     const {
       data: { movies },
     } = await axios.get(
-      `https://netflix-clone-zdbs.onrender.com/api/user/liked/${email}`
+      `https://sakthiflix.onrender.com/api/user/liked/${email}`
     );
     return movies;
   }
@@ -93,13 +93,10 @@ export const removeMovieFromLiked = createAsyncThunk(
   async ({ movieId, email }) => {
     const {
       data: { movies },
-    } = await axios.put(
-      "https://netflix-clone-zdbs.onrender.com/api/user/remove",
-      {
-        email,
-        movieId,
-      }
-    );
+    } = await axios.put("https://sakthiflix.onrender.com/api/user/remove", {
+      email,
+      movieId,
+    });
     return movies;
   }
 );

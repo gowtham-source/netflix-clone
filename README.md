@@ -1,9 +1,6 @@
 
 # <p align="center">Netflix-clone DEVREV!</p>
 
-<h1 align="center">Hi There, I'm Sakthi Murugeshwari👋</h1>
-<h5 align="center">From 3rd yr cse, SEC</h5>
-
 <p align="center">
 <img src="https://user-images.githubusercontent.com/75899822/230385926-ddd32181-a547-4469-b903-54377ea5300a.png" alt="sakthiflix" width="520" height="320">
 </p>
